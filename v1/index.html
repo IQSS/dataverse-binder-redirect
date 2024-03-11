@@ -3,7 +3,7 @@
 // https://iqss.github.io/dataverse-binder-redirect/v1/?datasetPid=doi:10.7910/DVN/TJCLKP
 const urlParams = new URLSearchParams(window.location.search);
 const datasetPid = urlParams.get('datasetPid');
-const pidWithoutProtocol = datasetPid.split(':');
+const pidWithoutProtocol = datasetPid.split(':')[1];
 // Redirect to Binder like this:
 //https://mybinder.org/v2/dataverse/10.7910/DVN/TJCLKP/
 window.location.replace('https://mybinder.org/v2/dataverse/' + pidWithoutProtocol + '/');
