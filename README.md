@@ -14,7 +14,7 @@ Please note that this redirect page will no longer be required once the Datavers
 curl -X POST -H 'Content-type: application/json' http://localhost:8080/api/admin/externalTools -d \
 '{
   "displayName": "Binder",
-  "toolName": "benderPreviewer", 
+  "toolName": "benderExplorer",
   "description": "Run on Binder",
   "scope": "dataset",
   "type": "explore",
